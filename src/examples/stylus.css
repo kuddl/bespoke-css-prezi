@@ -1,0 +1,13 @@
+/*ein Kommentar*/
+body {
+  background: #c0ffee;
+  width: 100px;
+  color: #c0ffee;
+}
+body a {
+  color: #c0ffee;
+  -webkit-border-radius: 11%;
+  border-radius: 11%;
+  padding: 5px 0 0 0;
+  margin: 2px 10px;
+}
