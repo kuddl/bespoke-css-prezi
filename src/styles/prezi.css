@@ -34,15 +34,15 @@ article.mainColor2 {
 }
 .fullscreen--sitzplan_try {
   background-size: 75%;
-  background-image: url("../images/sitzplan_try.png");
+  background-image: url("../images/Sitzplan_try.png");
 }
 .fullscreen--sitzplan_false {
   background-size: 75%;
-  background-image: url("../images/sitzplan_false.png");
+  background-image: url("../images/Sitzplan_false.png");
 }
 .fullscreen--sitzplan_dg {
   background-size: 75%;
-  background-image: url("../images/sitzplan_dg.png");
+  background-image: url("../images/Sitzplan_dg.png");
 }
 .fullscreen--fight {
   background-size: 100%;
