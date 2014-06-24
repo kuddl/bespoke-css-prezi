@@ -1,0 +1,62 @@
+/* general */
+.mC {
+  color: primary;
+}
+.mC-light {
+  color: primary2;
+}
+article.mainColor {
+  background: primary;
+}
+article.mainColor1 {
+  background: primary2;
+}
+article.mainColor2 {
+  background: primary;
+}
+/* Images */
+.logo {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.logo--segway {
+  background-size: 40%;
+  background-image: url("../images/segway.jpg");
+}
+.fullscreen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.fullscreen--starter {
+  background-size: 50%;
+  background-image: url("../images/funestdog.jpg");
+}
+.fullscreen--sitzplan_try {
+  background-size: 75%;
+  background-image: url("../images/sitzplan_try.png");
+}
+.fullscreen--sitzplan_false {
+  background-size: 75%;
+  background-image: url("../images/sitzplan_false.png");
+}
+.fullscreen--sitzplan_dg {
+  background-size: 75%;
+  background-image: url("../images/sitzplan_dg.png");
+}
+.fullscreen--fight {
+  background-size: 100%;
+  background-image: url("../images/fight.gif");
+}
+.fullscreen--future {
+  background-size: 100%;
+  background-image: url("../images/future.gif");
+}
+.fullscreen--oldman {
+  background-size: 100%;
+  background-image: url("../images/oldman.jpg");
+}
+.fullscreen--omg {
+  background-size: 100%;
+  background-image: url("../images/omg.gif");
+}
