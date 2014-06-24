@@ -12,7 +12,8 @@ article.mainColor1 {
   background: primary2;
 }
 article.mainColor2 {
-  background: primary;
+  background: primary3;
+  color: #bada55;
 }
 /* Images */
 .logo {
