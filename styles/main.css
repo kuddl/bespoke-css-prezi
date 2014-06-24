@@ -384,19 +384,19 @@ article.mainColor2 {
   -webkit-background-size: 75%;
   -moz-background-size: 75%;
   background-size: 75%;
-  background-image: url("../images/sitzplan_try.png");
+  background-image: url("../images/Sitzplan_try.png");
 }
 .fullscreen--sitzplan_false {
   -webkit-background-size: 75%;
   -moz-background-size: 75%;
   background-size: 75%;
-  background-image: url("../images/sitzplan_false.png");
+  background-image: url("../images/Sitzplan_false.png");
 }
 .fullscreen--sitzplan_dg {
   -webkit-background-size: 75%;
   -moz-background-size: 75%;
   background-size: 75%;
-  background-image: url("../images/sitzplan_dg.png");
+  background-image: url("../images/Sitzplan_dg.png");
 }
 .fullscreen--fight {
   -webkit-background-size: 100%;
