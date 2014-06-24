@@ -3,6 +3,7 @@
 // variables!
 
 primary = darken(#004883,10%)
+primary2 = lighten(#004883,50%)
 primaryBG = lighten(#303030,20%)
 
 slide_width = 640px
@@ -250,53 +251,4 @@ a
     width: 70px
     height: 70px
 
-/* general */
-.mC
-  color: primary
-  &-light
-    color: lighten(primary,50%)
-article
-    &.mainColor
-      background: primary
-    &.mainColor1
-      background: primary
-    &.mainColor2
-      background: primary
-
-
-/* Images */
-
-.logo
-  background-position: center
-  background-repeat: no-repeat
-  &--segway
-    background-size: 40%
-    background-image: url(../images/segway.jpg)
-
-.fullscreen
-  background-size: cover
-  background-position: center
-  background-repeat: no-repeat
-  &--starter
-    background-size: 50%
-    background-image: url(../images/funestdog.jpg)
-  &--sitzplan_try
-    background-size: 75%
-    background-image: url(../images/sitzplan_try.png)
-  &--sitzplan_false
-    background-size: 75%
-    background-image: url(../images/sitzplan_false.png)
-  &--sitzplan_dg
-    background-size: 75%
-    background-image: url(../images/sitzplan_dg.png)
-  &--fight
-    background-size: 100%
-    background-image: url(../images/fight.gif)
-  &--future
-    background-size: 100%
-    background-image: url(../images/future.gif)
-  &--oldman
-    background-size: 100%
-    background-image: url(../images/oldman.jpg)
-
-
+@import 'prezi.styl'

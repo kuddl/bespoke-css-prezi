@@ -55,43 +55,89 @@ html
       section.fullscreen.fullscreen--sitzplan_dg(data-bespoke-state='emphatic')
 
 
-      section.fullscreen.fullscreen--future(data-bespoke-state='mainColor')
-          h2.small CSS Variablen
-          small.small (coming soon)
-      
-      section.fullscreen.fullscreen--oldman(data-bespoke-state='mainColor')
 
       section.fullscreen.fullscreen--fight
           h2.bullet Sass vs Less vs Stylus
 
-      section
+      section(data-bespoke-state='mainColor1')
           h2 Sass
           ul.bullet
-            li Ruby (mainly)
+            li Ruby
+            li *.sass und *.scss
             li Reichweite
             li Compass
             li Caching
             li Ecosystem
 
-      section
+      section(data-bespoke-state='mainColor1')
           h2 LESS
           ul.bullet
             li JavaScript 
             li Node.js und Browser nativ
+              small.bullet (DO NOT USE)
             li Implementation in PHP
             li Bootstrap
             
 
-      section
+      section(data-bespoke-state='mainColor1')
           h2 Stylus
           ul.bullet
-            li 
-            li weit verbreitet
-            li             
+            li Node.js 
+            li Natives JavaScript
+            li Transparent Mixins + Syntax
+
+      section(data-bespoke-state='mainColor2')
+        h2 Syntax
+        pre
+          code.language-css.
+            /* style.scss or style.less */
+            h1 {
+              color: #0982C1;
+            }
+
+            /* style.sass (ohne klammern)*/
+            h1
+              color: #0982c1
+
+            /* style.styl */
+            h1 {
+              color: #0982C1;
+            }
+
+      section.fullscreen.fullscreen--omg(data-bespoke-state='mainColor')
+        h1 OMG! 
+        h2 Keine Interpunktion!
+
+      section(data-bespoke-state='mainColor2')
+        h2 Syntax Stylus
+        pre
+          code.language-css.
+            /* style.styl */
+            h1 {
+              color: #0982C1;
+            }
+            /* ohne Klammern */
+            h1
+              color: #0982C1;
+             
+            /* Ohne  colons and semi-colons */
+            h1
+              color #0982C1
+
+
+
+      section
+          h2.small CSS Variablen
+          small.small (coming soon)
+      
+      section.fullscreen.fullscreen--oldman(data-bespoke-state='mainColor')
+
+
+
       section
         h2 Small Modules
         pre
-          code.language-css            
+          code.language-css
             @import "header.css";
             @import "bildtext.css";
             @import "globalnavi.css";
