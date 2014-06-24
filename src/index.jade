@@ -19,18 +19,80 @@ html
 
     article
 
+      section.gif.gif--starter(data-bespoke-state='emphatic')
+    
       section
-        h1.bullet SDC
+        h1.bullet Seitenbau Developer Conference
+        h2.bullet.small CSS Preprozessoren
+  
+      section
+        h1.bullet Tobias Sailer 
+        small.bullet (aka Tobse)
+  
+      section
+        h2 Find me 
+        ul.bullet
+          li.twitter Twitter 
+            small.mC-light  (@tobiassailer)
+          li.facebook  Facebook 
+            small.mC-light (facebook.com/tobias.sailer.169)
+          li.googleplus Google+ 
+            small.mC-light (+tobiassailer)
+            small.mC-light (Youtube, Maps, Mail, Drive, Picasa, Blogger, Docs)
+          li.github Github 
+            small.mC-light (kuddl)
+          li &hellip;
+            small.mC-light (&amp;hellip;)
+          li.jira Jira 
+            small.mC-light (https://tracker.seitenbau.net/secure/ViewProfile.jspa?name=tsailer)
+          li.confluence Confluence 
+            small.mC-light (https://confluence.seitenbau.net/display/~tsailer/)
+  
+      section.fullscreen.fullscreen--sitzplan_try(data-bespoke-state='emphatic')
+      
+      section.fullscreen.fullscreen--sitzplan_false(data-bespoke-state='emphatic')
 
-          span.small CSS&nbsp;Preprozessoren
-        h2.bullet
+      section.fullscreen.fullscreen--sitzplan_dg(data-bespoke-state='emphatic')
 
+
+      section.fullscreen.fullscreen--future(data-bespoke-state='green')
+          h2.small CSS Variablen
+          small.small (coming soon)
+      
+      section.fullscreen.fullscreen--oldman(data-bespoke-state='green')
+
+      section.fullscreen.fullscreen--fight
+          h2.bullet Sass vs Less vs Stylus
+
+      
 
       section
-          h2
-            .bullet Sass
-            .bullet Less
-            .bullet Stylus
+        h2 Small Modules
+        pre
+          code.language-css            
+            @import "header.css";
+            @import "bildtext.css";
+            @import "globalnavi.css";
+            @import "navigator.css";
+            @import "linkenavi.css";
+            @import "footer.css";
+            @import "startseite.css";
+            @import "sitemap.css";
+            @import "glossar.css";
+            @import "index_az.css";
+            @import "kontakt.css";
+            @import "ie-lt-8.css";
+            @import "ie-lt-9.css";
+            @import "ie-lt-10.css";
+            @import "suche.css";
+            @import "tabbar.css";
+            @import "accordeon.css";
+            @import "slider.css";
+            @import "recall.css";
+
+
+
+
 
       section.logo.logo--segway(data-bespoke-state='emphatic')
         h2 Keyboard Interaction
@@ -87,7 +149,6 @@ html
           li
             strong Enjoy! :)
             a(href='http://twitter.com/markdalgleish')  -@markdalgleish
-
     // build:js scripts/scripts.js
     script(src='bower_components/bespoke.js/dist/bespoke.min.js')
     script(src='bower_components/bespoke-keys/dist/bespoke-keys.min.js')

@@ -1,0 +1,293 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"main",
+				"mainColor"
+			],
+			[
+				"max-",
+				"max-width"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"close",
+				"Project: Close"
+			],
+			[
+				"setsass",
+				"Set Syntax: Sass"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"updae",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"setle",
+				"Set Syntax: LESS"
+			],
+			[
+				"setstyl",
+				"Set Syntax: Stylus"
+			],
+			[
+				"setjade",
+				"Set Syntax: Jade"
+			],
+			[
+				"se",
+				"Set Syntax: Stylus"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"sethtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"browser",
+				"OmniMarkupPreviewer: Preview Current Markup in Browser"
+			],
+			[
+				"prev",
+				"OmniMarkupPreviewer: Empty Cache"
+			],
+			[
+				"gist",
+				"Gist: Open Gist"
+			],
+			[
+				"INSTALL",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/tsailer/Documents/GitHub/bespoke-css-prezi",
+		"/C/Users/tsailer/Documents/GitHub/bespoke-css-prezi/src"
+	],
+	"file_history":
+	[
+		"/C/Users/tsailer/Documents/GitHub/bespoke-css-prezi/prezi.sublime-project",
+		"/C/Users/tsailer/Documents/GitHub/bespoke-css-prezi/.gitignore",
+		"/C/Users/tsailer/Documents/GitHub/bespoke-css-prezi/src/examples/less.less",
+		"/C/Users/tsailer/Documents/GitHub/bespoke-css-prezi/src/examples/less.css",
+		"/C/Users/tsailer/Documents/GitHub/bespoke-css-prezi/src/examples/stylus.styl",
+		"/C/Users/tsailer/Documents/GitHub/bespoke-css-prezi/src/examples/stylus.css",
+		"/C/Users/tsailer/Documents/GitHub/bespoke-css-prezi/src/examples/sass.sass",
+		"/C/Users/tsailer/Documents/GitHub/bespoke-css-prezi/src/examples/sass.css",
+		"/C/Users/tsailer/Documents/GitHub/bespoke-css-prezi/src/examples/scss.scss",
+		"/C/Users/tsailer/Documents/GitHub/bespoke-css-prezi/src/examples/scss.css",
+		"/Users/seitenbau/css-prezi/node_modules/grunt-open/.idea/workspace.xml",
+		"/Users/seitenbau/css-prezi/node_modules/grunt-contrib-watch/docs/watch-options.md",
+		"/Users/seitenbau/css-prezi/node_modules/grunt/node_modules/.bin/which",
+		"/Users/seitenbau/css-prezi/node_modules/grunt-contrib-jade/node_modules/lodash-node/compat/internals/isNative.js",
+		"/Users/seitenbau/css-prezi/public/index.html",
+		"/Users/seitenbau/css-prezi/node_modules/bespoke-substeps/package.json",
+		"/Users/seitenbau/css-prezi/src/index.jade",
+		"/Users/seitenbau/css-prezi/README.md",
+		"/Users/seitenbau/css-prezi/.gitignore",
+		"/Users/seitenbau/Desktop/Beyond Tellerand.md",
+		"/Users/seitenbau/Desktop/test.html",
+		"/Users/seitenbau/gittests/tanzpreis-master/tanzpreismaster.sublime-project",
+		"/Users/seitenbau/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/seitenbau/gittests/tanzpreis-master/htdocs/css/main.css",
+		"/Users/seitenbau/gittests/tanzpreis-master/htdocs/index.html",
+		"/Users/seitenbau/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/seitenbau/Library/Application Support/Sublime Text 3/Packages/Gist/Gist.sublime-settings",
+		"/Users/seitenbau/Library/Application Support/Sublime Text 3/Packages/User/Gist.sublime-settings",
+		"/var/folders/ft/wrrwgmxs5gl49d71h8xh4tm00000gn/T/git aliases.sh",
+		"/Volumes/NO NAME/www/www.processlive.com/start/index.html",
+		"/Users/seitenbau/ghost/content/data/ghost-dev.db"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"@",
+			"100px",
+			"2",
+			"span",
+			"indent",
+			"spa",
+			"72665D79 DBFAB948 4B7CB24D 59A4F4CC",
+			"974A61FB 5665B165 B6EE19CC 874FF4EA",
+			"297ED905 CB6C24BA 935CB11E 8A62091B",
+			"901E03CC B9B792BF CA017D24 B9C1C0EE",
+			"72665D79 DBFAB948 4B7CB24D 59A4F4CC",
+			"974A61FB 5665B165 B6EE19CC 874FF4EA",
+			"297ED905 CB6C24BA 935CB11E 8A62091B",
+			"901E03CC B9B792BF CA017D24 B9C1C0EE"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 30.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "prezi.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"demo",
+				"C:\\sublimeprojects\\demo4_dev.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 214.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
