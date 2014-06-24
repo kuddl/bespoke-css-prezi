@@ -31,44 +31,82 @@
       <section data-bespoke-state="emphatic" class="fullscreen fullscreen--sitzplan_try"></section>
       <section data-bespoke-state="emphatic" class="fullscreen fullscreen--sitzplan_false"></section>
       <section data-bespoke-state="emphatic" class="fullscreen fullscreen--sitzplan_dg"></section>
-      <section data-bespoke-state="mainColor" class="fullscreen fullscreen--future">
-        <h2 class="small">CSS Variablen</h2><small class="small">(coming soon)</small>
-      </section>
-      <section data-bespoke-state="mainColor" class="fullscreen fullscreen--oldman"></section>
       <section class="fullscreen fullscreen--fight">
         <h2 class="bullet">Sass vs Less vs Stylus</h2>
       </section>
-      <section>
+      <section data-bespoke-state="mainColor1">
         <h2>Sass</h2>
         <ul class="bullet">
-          <li>Ruby (mainly)</li>
+          <li>Ruby</li>
+          <li>*.sass und *.scss</li>
           <li>Reichweite</li>
           <li>Compass</li>
           <li>Caching</li>
           <li>Ecosystem</li>
         </ul>
       </section>
-      <section>
+      <section data-bespoke-state="mainColor1">
         <h2>LESS</h2>
         <ul class="bullet">
           <li>JavaScript </li>
-          <li>Node.js und Browser nativ</li>
+          <li>Node.js und Browser nativ<small class="bullet">(DO NOT USE)</small></li>
           <li>Implementation in PHP</li>
           <li>Bootstrap</li>
         </ul>
       </section>
-      <section>
+      <section data-bespoke-state="mainColor1">
         <h2>Stylus</h2>
         <ul class="bullet">
-          <li></li>
-          <li>weit verbreitet</li>
-          <li>            </li>
+          <li>Node.js </li>
+          <li>Natives JavaScript</li>
+          <li>Transparent Mixins + Syntax</li>
         </ul>
       </section>
+      <section data-bespoke-state="mainColor2">
+        <h2>Syntax</h2>
+        <pre><code class="language-css">/* style.scss or style.less */
+h1 {
+  color: #0982C1;
+}
+
+/* style.sass (ohne klammern)*/
+h1
+  color: #0982c1
+  
+/* style.styl */
+h1 {
+  color: #0982C1;
+}
+</code></pre>
+      </section>
+      <section data-bespoke-state="mainColor" class="fullscreen fullscreen--omg">
+        <h1>OMG! </h1>
+        <h2>Keine Interpunktion!</h2>
+      </section>
+      <section data-bespoke-state="mainColor2">
+        <h2>Syntax Stylus</h2>
+        <pre><code class="language-css">/* style.styl */
+h1 {
+  color: #0982C1;
+}
+/* ohne Klammern */
+h1
+  color: #0982C1;
+  
+/* Ohne  colons and semi-colons */
+h1
+  color #0982C1
+  
+  
+  </code></pre>
+      </section>
+      <section data-bespoke-state="mainColor" class="fullscreen fullscreen--future">
+        <h2 class="small">CSS Variablen</h2><small class="small">(coming soon)</small>
+      </section>
+      <section data-bespoke-state="mainColor" class="fullscreen fullscreen--oldman"></section>
       <section>
         <h2>Small Modules</h2>
-        <pre><code class="language-css">           
-@import "header.css";
+        <pre><code class="language-css">@import "header.css";
 @import "bildtext.css";
 @import "globalnavi.css";
 @import "navigator.css";
