@@ -310,7 +310,16 @@ html
 
 
       section
-        h2 Small Modules
+        h2 CSS is a mess
+        br 
+        small by Jonatha Snook http://snook.ca/pages/speaking
+        br
+        img.bullet(src="./images/scrolling.gif" style="max-width:100%;")
+
+      section.fullscreen.fullscreen--familyguy(data-bespoke-state='emphatic')
+
+      section
+        h2 pure CSS @import
         br
         small (HAZ BAD PERFORMANCE)
         pre
@@ -335,10 +344,10 @@ html
             @import "slider.css";
             @import "recall.css";
 
-      section.fullscreen.fullscreen--angry(data-bespoke-state='emphatic')
+      section.fullscreen.fullscreen--marcelo(data-bespoke-state='emphatic')
 
       section
-        h2 Small Modules
+        h2 @import Preprozessor 
         br
         small (YOU CAN HAZ THIS)
         pre
@@ -353,17 +362,84 @@ html
 
       section
         h2 Farben
+        pre
+          code.language-css.
+            lighten($color, 10%);
+            darken($color, 10%);
+
+            saturate($color, 10%);
+            desaturate($color, 10%);
+
+            grayscale($color);
+            complement($color);
+            invert($color);
+
+            mix($color1, $color2, 50%);
+
 
       section
         h2 Berechnen
+        pre
+          code.language-css.
+            body {
+              margin: (14px/2);
+              top: 50px + 100px;
+              right: 100px - 50px;
+              left: 10 * 10;
+            }
 
       section
         h2 Browser Prefixing
+        small (Less Beispiel)
+        pre
+          code.language-css.
+            .border-radius(@values) {
+              -webkit-border-radius: @values;
+                 -moz-border-radius: @values;
+                      border-radius: @values;
+            }
+             
+            div {
+              .border-radius(10px);
+            }
+
 
       section
-        h2 Grid
+        h3 Easy semantic Grid 
+          small 
+            a(href="http://semantic.gs/") http://semantic.gs/
+        pre
+          code.language-markup.
+            &lt;header&gt;...&lt;/header&gt;
+            &lt;article&gt;...&lt;/article&gt;
+            &lt;aside&gt;...&lt;/aside&gt;
+        pre
+          code.language-css.
+            @column-width: 60;
+            @gutter-width: 20;
+            @columns: 12;
+
+            header { .column(12); }
+            article { .column(9); }
+            aside { .column(3); }
+
+            @media (max-device-width: 960px) {
+               article { .column(12); }
+               aside { .column(12); }
+            }
+
+
+      section
+        h2 Base64 data-uri
+        pre
+          code.language-css.
+            /* macht aus */
+            data-uri('../data/image.jpg');
+            /* ein base64 */
+            url('data:image/jpeg;base64,bm90IGFjdHVhbGx5IGEganBlZyBmaWxlCg==');
 
       section.logo.logo--segway(data-bespoke-state='emphatic')
+        
       section
         h2 Mixin Bibliotheken
 
