@@ -258,6 +258,7 @@ html
       section
         h2 Vererbung / Extend 
         br
+        small Less & Sass & Stylus (hier mit Stylus)
         pre
           code.language-javascript.
             red = #E33E1E
@@ -306,12 +307,14 @@ html
                 font-weight: bold;
                 color: #e33e1e;
               }
-  
+
 
       section
         h2 Small Modules
+        br
+        small (HAZ BAD PERFORMANCE)
         pre
-          code.language-css
+          code.language-css.
             @import "header.css";
             @import "bildtext.css";
             @import "globalnavi.css";
@@ -331,6 +334,22 @@ html
             @import "accordeon.css";
             @import "slider.css";
             @import "recall.css";
+
+      section.fullscreen.fullscreen--angry(data-bespoke-state='emphatic')
+
+      section
+        h2 Small Modules
+        br
+        small (YOU CAN HAZ THIS)
+        pre
+          code.language-css.
+            @import "mixins.less";
+            @import "colors.less";
+            @import "grid.less";
+            @import "file.{type}";
+ 
+
+      section.fullscreen.fullscreen--clapp(data-bespoke-state='emphatic')
 
       section
         h2 Farben
