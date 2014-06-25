@@ -148,34 +148,165 @@ html
             /* Stylus */
             mainColor = #C0FFEE
             h1
-              color @mainColor
+              color mainColor
+
+      section
+        h2 Schachteln / Namespacing
+        pre
+          code.language-css.
+            footer { 
+              margin: 10px;
+            }
+            footer nav { 
+              height: 25px;
+            }
+            footer nav a { 
+              text-decoration: none;
+            }
+            footer nav a:hover {
+              text-decoration: underline;
+            }
 
 
-      section(data-bespoke-state='mainColor2')
-        h2 Variablen
+      section
+        h2 Schachteln Sass, Less und Stylus
+        pre
+          code.language-css.
+            section {
+              margin: 10px;
+              nav {
+                height: 25px;
+                a {
+                  text-decoration: none;
+                  &amp;:hover {
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+
+      section
+        h2 Schachteln mit Stylus
         pre
           code.language-javascript.
-            @mainColor : #C0FFEE; //Sass
-            $mainColor : #C0FFEE; // Less
-            h1 { 
-              color: @mainColor;
-              color: $mainColor;
-            } 
-            /* Stylus */
-            mainColor = #C0FFEE
-            h1
-              color @mainColor
+            section
+              margin 10px
+              nav
+                height 25px
+                a
+                  text-decoration none
+                  &amp;:hover
+                    text-decoration underline
+
+      section.fullscreen.fullscreen--joker(data-bespoke-state='emphatic')
 
       section
-        h2 Schachteln
-
+        h2 Mixins mit Sass
+        pre
+          code.language-javascript.
+            @mixin msg($borderWidth: 2px, $color: #F00) {
+              border: $borderWidth solid $color;
+              color: $color;
+            }
+             
+            .generic-error {
+              margin: 4px;
+              @include msg();
+            }
+            .login-error {
+              position: absolute;
+              top: 20px;
+              @include msg(5px,papayawhip);
+            }
 
       section
-        h2 Mixins
-
+        h2 Mixins mit Less
+        pre
+          code.language-javascript.
+            .msg(@borderWidth: 2px, @color: #F00) {
+              border: @borderWidth solid @color;
+              color: @color;
+            }
+             
+            .generic-error {
+              margin: 4px;
+              .msg();
+            }
+            .login-error {
+              position: absolute;
+              top: 20px;
+              .msg(5px,papayawhip);
+            }
 
       section
-        h2 Vererbung
+        h2 Mixins mit Stylus
+        pre
+          code.language-javascript.
+            msg(borderWidth= 2px, color= #F00)
+              border borderWidth solid color
+              color color
+
+            .generic-error 
+              margin 4px
+              msg()
+
+            .login-error
+              position absolute
+              top 20px
+              msg(5px,papayawhip)
+
+      section
+        h2 Vererbung / Extend 
+        br
+        pre
+          code.language-javascript.
+            red = #E33E1E
+            yellow = #E2E21E
+
+            .message
+              padding: 10px
+              font: 14px Helvetica
+              border: 1px solid #eee
+            .warning
+              @extends .message
+              border-color: yellow
+              background: yellow + 70%
+            .error
+              @extends .message
+              border-color: red
+              background: red + 70%
+            .fatal
+              @extends .error
+              font-weight: bold
+              color: red
+
+      section
+        h2 Vererbung Ergebnis  
+        br
+        pre
+          code.language-css.
+              .message,
+              .warning,
+              .error,
+              .fatal {
+                padding: 10px;
+                font: 14px Helvetica;
+                border: 1px solid #eee;
+              }
+              .warning {
+                border-color: #e2e21e;
+                background: #f6f6bc;
+              }
+              .error,
+              .fatal {
+                border-color: #e33e1e;
+                background: #f7c5bc;
+              }
+              .fatal {
+                font-weight: bold;
+                color: #e33e1e;
+              }
+  
 
       section
         h2 Small Modules
@@ -223,14 +354,14 @@ html
 
     // build:js scripts/scripts.js
     script(src='bower_components/bespoke.js/dist/bespoke.min.js')
-    script(src='bower_components/bespoke-keys/dist/bespoke-keys.min.js')
-    script(src='bower_components/bespoke-touch/dist/bespoke-touch.min.js')
-    script(src='bower_components/bespoke-bullets/dist/bespoke-bullets.min.js')
-    script(src='bower_components/bespoke-scale/dist/bespoke-scale.min.js')
-    script(src='bower_components/bespoke-hash/dist/bespoke-hash.min.js')
     script(src='bower_components/bespoke-progress/dist/bespoke-progress.min.js')
+    script(src='bower_components/bespoke-bullets/dist/bespoke-bullets.min.js')
     script(src='bower_components/bespoke-state/dist/bespoke-state.min.js')
+    script(src='bower_components/bespoke-touch/dist/bespoke-touch.min.js')
+    script(src='bower_components/bespoke-scale/dist/bespoke-scale.min.js')
     script(src='bower_components/bespoke-forms/dist/bespoke-forms.min.js')
+    script(src='bower_components/bespoke-keys/dist/bespoke-keys.min.js')
+    script(src='bower_components/bespoke-hash/dist/bespoke-hash.min.js')
     script(src='bower_components/prism/prism.js')
     script(src='scripts/main.js')
     // endbuild
