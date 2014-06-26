@@ -15,6 +15,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "src/index.jade",
+			"settings":
+			{
+				"buffer_size": 10968,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/styles/prezi.styl",
+			"settings":
+			{
+				"buffer_size": 1439,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -22,6 +38,10 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"gist",
+				"Gist: Open Gist"
+			],
 			[
 				"reind",
 				"Indentation: Reindent Lines"
@@ -83,10 +103,6 @@
 				"OmniMarkupPreviewer: Empty Cache"
 			],
 			[
-				"gist",
-				"Gist: Open Gist"
-			],
-			[
 				"INSTALL",
 				"Package Control: Install Package"
 			],
@@ -117,10 +133,23 @@
 	"expanded_folders":
 	[
 		"/C/Users/tsailer/Documents/GitHub/bespoke-css-prezi",
-		"/C/Users/tsailer/Documents/GitHub/bespoke-css-prezi/src"
+		"/C/Users/tsailer/Documents/GitHub/bespoke-css-prezi/src",
+		"/C/Users/tsailer/Documents/GitHub/bespoke-css-prezi/src/styles"
 	],
 	"file_history":
 	[
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/tsailer/Documents/GitHub/bespoke-css-prezi/src/styles/prezi.styl",
+		"/I/svbund_internet_live/.gitignore",
+		"/c/users/tsailer/appdata/local/temp/.profile",
+		"/C/winscp_tmp/scp35933/srv/serveroverview/main/make_serveroverview.sh",
+		"/C/winscp_tmp/scp34753/srv/serveroverview/main/new_server.sh",
+		"/C/winscp_tmp/scp34601/srv/serveroverview/main/servers/sb-cms4-develop",
+		"/C/winscp_tmp/scp32260/srv/serveroverview/index.php",
+		"/C/winscp_tmp/scp34538/srv/serveroverview/main/wget.log",
+		"/C/winscp_tmp/scp37574/srv/serveroverview/main/hostlist.txt",
+		"/C/winscp_tmp/scp33880/srv/serveroverview/main/servers/sb-cms5-develop",
+		"/C/winscp_tmp/scp34370/srv/serveroverview/main/urlcheck.sh",
 		"/C/Users/tsailer/Documents/GitHub/bespoke-css-prezi/prezi.sublime-project",
 		"/C/Users/tsailer/Documents/GitHub/bespoke-css-prezi/.gitignore",
 		"/C/Users/tsailer/Documents/GitHub/bespoke-css-prezi/src/examples/less.less",
@@ -169,6 +198,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"clapps",
+			"joker",
+			".css",
+			"http://178.209.37.125/",
+			"msg",
+			".error(",
+			"error(",
+			"error",
+			":",
+			"@",
+			"$",
+			"#F00",
+			"omg",
+			"section",
 			"@",
 			"100px",
 			"2",
@@ -200,8 +243,181 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/index.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10968,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9532,
+								9532
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 6106.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "src/styles/prezi.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1439,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1364,
+								1364
+							],
+							[
+								1432,
+								1432
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 342.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -222,11 +438,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -284,7 +507,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 214.0,
 	"status_bar_visible": true,
 	"template_settings":
