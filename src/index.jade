@@ -108,7 +108,7 @@ html
               color: #0982C1;
             }
 
-      section.fullscreen.fullscreen--omg(data-bespoke-state='mainColor')
+      section.fullscreen.fullscreen--omg(data-bespoke-state='mainColor2')
         h1 OMG! 
         h2 Keine Interpunktion!
 
@@ -129,13 +129,13 @@ html
               color #C0FFEE
 
 
-      section.fullscreen.fullscreen--future(data-bespoke-state='mainColor')
+      section.fullscreen.fullscreen--future(data-bespoke-state='mainColor3')
           h2.small CSS Variablen
           small.small (coming soon)
-      section.fullscreen.fullscreen--oldman(data-bespoke-state='mainColor')
+      section.fullscreen.fullscreen--oldman(data-bespoke-state='mainColor3')
 
 
-      section.light(data-bespoke-state='mainColor2')
+      section.light(data-bespoke-state='mainColor3')
         h2 Variablen
         pre
           code.language-javascript.
@@ -150,7 +150,7 @@ html
             h1
               color mainColor
 
-      section
+      section.light(data-bespoke-state='mainColor4')
         h2 Schachteln / Namespacing
         pre
           code.language-css.
@@ -168,7 +168,7 @@ html
             }
 
 
-      section
+      section.light(data-bespoke-state='mainColor4')
         h2 Schachteln Sass, Less und Stylus
         pre
           code.language-css.
@@ -185,7 +185,7 @@ html
               }
             }
 
-      section
+      section.light(data-bespoke-state='mainColor4')
         h2 Schachteln mit Stylus
         pre
           code.language-javascript.
@@ -200,7 +200,7 @@ html
 
       section.fullscreen.fullscreen--joker(data-bespoke-state='emphatic')
 
-      section
+      section(data-bespoke-state='mainColor5')
         h2 Mixins mit Sass
         pre
           code.language-javascript.
@@ -219,7 +219,7 @@ html
               @include msg(5px,papayawhip);
             }
 
-      section
+      section(data-bespoke-state='mainColor5')
         h2 Mixins mit Less
         pre
           code.language-javascript.
@@ -238,7 +238,7 @@ html
               .msg(5px,papayawhip);
             }
 
-      section
+      section(data-bespoke-state='mainColor5')
         h2 Mixins mit Stylus
         pre
           code.language-javascript.
@@ -255,7 +255,7 @@ html
               top 20px
               msg(5px,papayawhip)
 
-      section
+      section(data-bespoke-state='mainColor6')
         h2 Vererbung / Extend 
         br
         small Less & Sass & Stylus (hier mit Stylus)
@@ -281,7 +281,7 @@ html
               font-weight: bold
               color: red
 
-      section
+      section(data-bespoke-state='mainColor6')
         h2 Vererbung Ergebnis  
         br
         pre
@@ -309,16 +309,16 @@ html
               }
 
 
-      section
+      section.light(data-bespoke-state='mainColor7')
         h2 CSS is a mess
         br 
-        small by Jonatha Snook http://snook.ca/pages/speaking
+        small by Jonathan Snook http://snook.ca/pages/speaking
         br
         img.bullet(src="./images/scrolling.gif" style="max-width:100%;")
 
-      section.fullscreen.fullscreen--familyguy(data-bespoke-state='emphatic')
+      section.fullscreen.fullscreen--familyguy(data-bespoke-state='mainColorNeutral')
 
-      section
+      section.light(data-bespoke-state='mainColor7')
         h2 pure CSS @import
         br
         small (HAZ BAD PERFORMANCE)
@@ -344,9 +344,9 @@ html
             @import "slider.css";
             @import "recall.css";
 
-      section.fullscreen.fullscreen--marcelo(data-bespoke-state='emphatic')
+      section.fullscreen.fullscreen--marcelo(data-bespoke-state='mainColor7')
 
-      section
+      section.light(data-bespoke-state='mainColor7')
         h2 @import Preprozessor 
         br
         small (YOU CAN HAZ THIS)
@@ -358,9 +358,9 @@ html
             @import "file.{type}";
  
 
-      section.fullscreen.fullscreen--clapp(data-bespoke-state='emphatic')
+      section.fullscreen.fullscreen--clapp(data-bespoke-state='mainColor7')
 
-      section
+      section.light(data-bespoke-state='mainColor8')
         h2 Farben
         pre
           code.language-css.
@@ -377,7 +377,8 @@ html
             mix($color1, $color2, 50%);
 
 
-      section
+      section.fullscreen.fullscreen--chalkboard(data-bespoke-state='mainColor9')
+      section.light(data-bespoke-state='mainColor9')
         h2 Berechnen
         pre
           code.language-css.
@@ -388,7 +389,9 @@ html
               left: 10 * 10;
             }
 
-      section
+      
+      section.fullscreen.fullscreen--browser(data-bespoke-state='mainColor10')
+      section(data-bespoke-state='mainColor10')
         h2 Browser Prefixing
         small (Less Beispiel)
         pre
@@ -404,7 +407,8 @@ html
             }
 
 
-      section
+      section.light.fullscreen.fullscreen--engineer(data-bespoke-state='mainColor11')
+      section(data-bespoke-state='mainColor11')
         h3 Easy semantic Grid 
           small 
             a(href="http://semantic.gs/") http://semantic.gs/
@@ -429,7 +433,10 @@ html
             }
 
 
-      section
+      section.light(data-bespoke-state='mainColor12')
+        h2 #kittenfistbump
+        img(src="images/kittenfistbump.jpg", alt="")
+      section(data-bespoke-state='mainColor12')
         h2 Base64 data-uri
         pre
           code.language-css.
@@ -438,12 +445,33 @@ html
             /* ein base64 */
             url('data:image/jpeg;base64,bm90IGFjdHVhbGx5IGEganBlZyBmaWxlCg==');
 
-      section.logo.logo--segway(data-bespoke-state='emphatic')
-        
-      section
+      
+      section.logo.logo--segway(data-bespoke-state='mainColor13')
+      section.light(data-bespoke-state='mainColor13')
         h2 Mixin Bibliotheken
 
+        img.logosolo(src="images/sass_compass.png", alt="")
+        img.logosolo(src="images/less_hat.jpg", alt="")
+        img.logosolo(src="images/nib.png", alt="")
 
+      section.light.fullscreen.fullscreen--neverending(data-bespoke-state='mainColor')
+
+      section.light.fullscreen.fullscreen--no(data-bespoke-state='mainColor')
+
+  
+      section(data-bespoke-state="mainColor7")
+        h1 Negatives
+        ul.bullet
+          li Buildstep
+          li SourceMaps
+          li "Know your CSS" &copy; Jonathan Snook
+
+      section.light.fullscreen.fullscreen--spiderman(data-bespoke-state='mainColor')
+  
+      section.light(data-bespoke-state='coffee')
+        h1.bullet Fragen?
+        h1.bullet Danke!
+        img.avatar(src="images/avatar.tobias.sailer.jpg", alt="")
 
 
 

@@ -5,14 +5,56 @@
 .mC-light {
   color: primary2;
 }
+article.mainColorNeutral {
+  background: #ccc;
+}
 article.mainColor {
   background: primary;
 }
 article.mainColor1 {
-  background: primary2;
+  background: primary1;
+}
+article.mainColor1 a {
+  color: secondarycolor4;
 }
 article.mainColor2 {
+  background: primary2;
+}
+article.mainColor3 {
   background: primary3;
+}
+article.mainColor4 {
+  background: primary4;
+}
+article.mainColor5 {
+  background: altcolor;
+}
+article.mainColor6 {
+  background: altcolor1;
+}
+article.mainColor7 {
+  background: altcolor2;
+}
+article.mainColor8 {
+  background: altcolor3;
+}
+article.mainColor9 {
+  background: secondarycolor;
+}
+article.mainColor10 {
+  background: secondarycolor1;
+}
+article.mainColor11 {
+  background: secondarycolor2;
+}
+article.mainColor12 {
+  background: secondarycolor3;
+}
+article.mainColor13 {
+  background: secondarycolor4;
+}
+article.coffee {
+  background: #c0ffee;
 }
 /* Images */
 .logo {
@@ -75,4 +117,40 @@ article.mainColor2 {
 .fullscreen--clapp {
   background-size: 100%;
   background-image: url("../images/clapp.gif");
+}
+.fullscreen--chalkboard {
+  background-size: 100%;
+  background-image: url("../images/chalkboard.png");
+}
+.fullscreen--browser {
+  background-size: 100%;
+  background-image: url("../images/browser.jpg");
+}
+.fullscreen--engineer {
+  background-size: 50%;
+  background-image: url("../images/engineer.jpg");
+}
+.fullscreen--kittenfistbump {
+  background-size: 100%;
+  background-image: url("../images/kittenfistbump.jpg");
+}
+.fullscreen--neverending {
+  background-size: 100%;
+  background-image: url("../images/neverending.gif");
+}
+.fullscreen--kittenfistbump {
+  background-size: 100%;
+  background-image: url("../images/kittenfistbump.jpg");
+}
+.fullscreen--slowclap {
+  background-size: 100%;
+  background-image: url("../images/slowclap.gif");
+}
+.fullscreen--no {
+  background-size: 100%;
+  background-image: url("../images/no.gif");
+}
+.fullscreen--spiderman {
+  background-size: 100%;
+  background-image: url("../images/spiderman.jpg");
 }

@@ -3,9 +3,20 @@
 // variables!
 
 primary = darken(#004883,10%)
-primary2 = lighten(#004883,50%)
-primary3 = lighten(#004883,70%)
+primary1 = #004883
+primary2 = lighten(#004883,30%)
+primary3 = lighten(#004883,50%)
+primary4 = lighten(#004883,80%)
 primaryBG = darken(primary,60%)
+altcolor = spin(primary,180)
+altcolor1 = lighten(altcolor,30%)
+altcolor2 = lighten(altcolor,50%)
+altcolor3 = lighten(altcolor,80%)
+secondarycolor = spin(altcolor,120)
+secondarycolor1 = lighten(altcolor,20%)
+secondarycolor2 = lighten(altcolor,40%)
+secondarycolor3 = lighten(altcolor,60%)
+secondarycolor4 = lighten(altcolor,80%)
 
 slide_width = 640px
 slide_height = 480px
@@ -251,5 +262,13 @@ a
   &--small
     width: 70px
     height: 70px
+
+.logosolo
+  display block
+  margin 10px auto
+  width 250px
+  border-radius 10px
+
+
 
 @import 'prezi.styl'
