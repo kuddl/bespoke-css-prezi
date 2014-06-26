@@ -342,20 +342,69 @@ a.black {
   width: 70px;
   height: 70px;
 }
+.logosolo {
+  display: block;
+  margin: 10px auto;
+  width: 250px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
 .mC {
   color: #004176;
 }
 .mC-light {
-  color: #42aaff;
+  color: #0086f5;
+}
+article.mainColorNeutral {
+  background: #ccc;
 }
 article.mainColor {
   background: #004176;
 }
 article.mainColor1 {
-  background: #42aaff;
+  background: #004883;
+}
+article.mainColor1 a {
+  color: #ffd4b1;
 }
 article.mainColor2 {
-  background: #8dccff;
+  background: #0086f5;
+}
+article.mainColor3 {
+  background: #42aaff;
+}
+article.mainColor4 {
+  background: #b3ddff;
+}
+article.mainColor5 {
+  background: #763500;
+}
+article.mainColor6 {
+  background: #ec6a00;
+}
+article.mainColor7 {
+  background: #ff933b;
+}
+article.mainColor8 {
+  background: #ffd4b1;
+}
+article.mainColor9 {
+  background: #007635;
+}
+article.mainColor10 {
+  background: #c45800;
+}
+article.mainColor11 {
+  background: #ff7d14;
+}
+article.mainColor12 {
+  background: #ffa962;
+}
+article.mainColor13 {
+  background: #ffd4b1;
+}
+article.coffee {
+  background: #c0ffee;
 }
 .logo {
   background-position: center;
@@ -445,4 +494,58 @@ article.mainColor2 {
   -moz-background-size: 100%;
   background-size: 100%;
   background-image: url("../images/clapp.gif");
+}
+.fullscreen--chalkboard {
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  background-image: url("../images/chalkboard.png");
+}
+.fullscreen--browser {
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  background-image: url("../images/browser.jpg");
+}
+.fullscreen--engineer {
+  -webkit-background-size: 50%;
+  -moz-background-size: 50%;
+  background-size: 50%;
+  background-image: url("../images/engineer.jpg");
+}
+.fullscreen--kittenfistbump {
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  background-image: url("../images/kittenfistbump.jpg");
+}
+.fullscreen--neverending {
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  background-image: url("../images/neverending.gif");
+}
+.fullscreen--kittenfistbump {
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  background-image: url("../images/kittenfistbump.jpg");
+}
+.fullscreen--slowclap {
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  background-image: url("../images/slowclap.gif");
+}
+.fullscreen--no {
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  background-image: url("../images/no.gif");
+}
+.fullscreen--spiderman {
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  background-image: url("../images/spiderman.jpg");
 }

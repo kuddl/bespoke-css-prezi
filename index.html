@@ -77,7 +77,7 @@ h1 {
 }
 </code></pre>
       </section>
-      <section data-bespoke-state="mainColor" class="fullscreen fullscreen--omg">
+      <section data-bespoke-state="mainColor2" class="fullscreen fullscreen--omg">
         <h1>OMG! </h1>
         <h2>Keine Interpunktion!</h2>
       </section>
@@ -97,11 +97,11 @@ h1
   
   </code></pre>
       </section>
-      <section data-bespoke-state="mainColor" class="fullscreen fullscreen--future">
+      <section data-bespoke-state="mainColor3" class="fullscreen fullscreen--future">
         <h2 class="small">CSS Variablen</h2><small class="small">(coming soon)</small>
       </section>
-      <section data-bespoke-state="mainColor" class="fullscreen fullscreen--oldman"></section>
-      <section data-bespoke-state="mainColor2" class="light">
+      <section data-bespoke-state="mainColor3" class="fullscreen fullscreen--oldman"></section>
+      <section data-bespoke-state="mainColor3" class="light">
         <h2>Variablen</h2>
         <pre><code class="language-javascript">@mainColor : #C0FFEE; //Sass
 $mainColor : #C0FFEE; // Less
@@ -115,7 +115,7 @@ h1
   color mainColor
   </code></pre>
       </section>
-      <section>
+      <section data-bespoke-state="mainColor4" class="light">
         <h2>Schachteln / Namespacing</h2>
         <pre><code class="language-css">footer { 
   margin: 10px;
@@ -132,7 +132,7 @@ footer nav a:hover {
 
 </code></pre>
       </section>
-      <section>
+      <section data-bespoke-state="mainColor4" class="light">
         <h2>Schachteln Sass, Less und Stylus</h2>
         <pre><code class="language-css">section {
   margin: 10px;
@@ -148,7 +148,7 @@ footer nav a:hover {
 }
 </code></pre>
       </section>
-      <section>
+      <section data-bespoke-state="mainColor4" class="light">
         <h2>Schachteln mit Stylus</h2>
         <pre><code class="language-javascript">section
   margin 10px
@@ -161,7 +161,7 @@ footer nav a:hover {
         </code></pre>
       </section>
       <section data-bespoke-state="emphatic" class="fullscreen fullscreen--joker"></section>
-      <section>
+      <section data-bespoke-state="mainColor5">
         <h2>Mixins mit Sass</h2>
         <pre><code class="language-javascript">@mixin msg($borderWidth: 2px, $color: #F00) {
   border: $borderWidth solid $color;
@@ -179,7 +179,7 @@ footer nav a:hover {
 }
 </code></pre>
       </section>
-      <section>
+      <section data-bespoke-state="mainColor5">
         <h2>Mixins mit Less</h2>
         <pre><code class="language-javascript">.msg(@borderWidth: 2px, @color: #F00) {
   border: @borderWidth solid @color;
@@ -197,7 +197,7 @@ footer nav a:hover {
 }
 </code></pre>
       </section>
-      <section>
+      <section data-bespoke-state="mainColor5">
         <h2>Mixins mit Stylus</h2>
         <pre><code class="language-javascript">msg(borderWidth= 2px, color= #F00)
   border borderWidth solid color
@@ -213,7 +213,7 @@ footer nav a:hover {
   msg(5px,papayawhip)
   </code></pre>
       </section>
-      <section>
+      <section data-bespoke-state="mainColor6">
         <h2>Vererbung / Extend </h2><br><small>Less & Sass & Stylus (hier mit Stylus)</small>
         <pre><code class="language-javascript">red = #E33E1E
 yellow = #E2E21E
@@ -236,7 +236,7 @@ yellow = #E2E21E
   color: red
   </code></pre>
       </section>
-      <section>
+      <section data-bespoke-state="mainColor6">
         <h2>Vererbung Ergebnis  </h2><br>
         <pre><code class="language-css">.message,
 .warning,
@@ -262,11 +262,11 @@ yellow = #E2E21E
 
 </code></pre>
       </section>
-      <section>
-        <h2>CSS is a mess</h2><br><small>by Jonatha Snook http://snook.ca/pages/speaking</small><br><img src="./images/scrolling.gif" style="max-width:100%;" class="bullet">
+      <section data-bespoke-state="mainColor7" class="light">
+        <h2>CSS is a mess</h2><br><small>by Jonathan Snook http://snook.ca/pages/speaking</small><br><img src="./images/scrolling.gif" style="max-width:100%;" class="bullet">
       </section>
-      <section data-bespoke-state="emphatic" class="fullscreen fullscreen--familyguy"></section>
-      <section>
+      <section data-bespoke-state="mainColorNeutral" class="fullscreen fullscreen--familyguy"></section>
+      <section data-bespoke-state="mainColor7" class="light">
         <h2>pure CSS @import</h2><br><small>(HAZ BAD PERFORMANCE)</small>
         <pre><code class="language-css">@import "header.css";
 @import "bildtext.css";
@@ -289,8 +289,8 @@ yellow = #E2E21E
 @import "recall.css";
 </code></pre>
       </section>
-      <section data-bespoke-state="emphatic" class="fullscreen fullscreen--marcelo"></section>
-      <section>
+      <section data-bespoke-state="mainColor7" class="fullscreen fullscreen--marcelo"></section>
+      <section data-bespoke-state="mainColor7" class="light">
         <h2>@import Preprozessor </h2><br><small>(YOU CAN HAZ THIS)</small>
         <pre><code class="language-css">@import "mixins.less";
 @import "colors.less";
@@ -299,8 +299,8 @@ yellow = #E2E21E
 
 </code></pre>
       </section>
-      <section data-bespoke-state="emphatic" class="fullscreen fullscreen--clapp"></section>
-      <section>
+      <section data-bespoke-state="mainColor7" class="fullscreen fullscreen--clapp"></section>
+      <section data-bespoke-state="mainColor8" class="light">
         <h2>Farben</h2>
         <pre><code class="language-css">lighten($color, 10%);
 darken($color, 10%);
@@ -316,7 +316,8 @@ mix($color1, $color2, 50%);
 
 </code></pre>
       </section>
-      <section>
+      <section data-bespoke-state="mainColor9" class="fullscreen fullscreen--chalkboard"></section>
+      <section data-bespoke-state="mainColor9" class="light">
         <h2>Berechnen</h2>
         <pre><code class="language-css">body {
   margin: (14px/2);
@@ -324,9 +325,11 @@ mix($color1, $color2, 50%);
   right: 100px - 50px;
   left: 10 * 10;
 }
+
 </code></pre>
       </section>
-      <section>
+      <section data-bespoke-state="mainColor10" class="fullscreen fullscreen--browser"></section>
+      <section data-bespoke-state="mainColor10">
         <h2>Browser Prefixing</h2><small>(Less Beispiel)</small>
         <pre><code class="language-css">.border-radius(@values) {
   -webkit-border-radius: @values;
@@ -340,7 +343,8 @@ div {
 
 </code></pre>
       </section>
-      <section>
+      <section data-bespoke-state="mainColor11" class="light fullscreen fullscreen--engineer"></section>
+      <section data-bespoke-state="mainColor11">
         <h3>Easy semantic Grid <small><a href="http://semantic.gs/">http://semantic.gs/</a></small></h3>
         <pre><code class="language-markup">&lt;header&gt;...&lt;/header&gt;
 &lt;article&gt;...&lt;/article&gt;
@@ -360,17 +364,36 @@ aside { .column(3); }
 
 </code></pre>
       </section>
-      <section>
+      <section data-bespoke-state="mainColor12" class="light">
+        <h2>#kittenfistbump</h2><img src="images/kittenfistbump.jpg" alt="">
+      </section>
+      <section data-bespoke-state="mainColor12">
         <h2>Base64 data-uri</h2>
         <pre><code class="language-css">/* macht aus */
 data-uri('../data/image.jpg');
 /* ein base64 */
 url('data:image/jpeg;base64,bm90IGFjdHVhbGx5IGEganBlZyBmaWxlCg==');
+
 </code></pre>
       </section>
-      <section data-bespoke-state="emphatic" class="logo logo--segway"></section>
-      <section>
-        <h2>Mixin Bibliotheken</h2>
+      <section data-bespoke-state="mainColor13" class="logo logo--segway"></section>
+      <section data-bespoke-state="mainColor13" class="light">
+        <h2>Mixin Bibliotheken</h2><img src="images/sass_compass.png" alt="" class="logosolo"><img src="images/less_hat.jpg" alt="" class="logosolo"><img src="images/nib.png" alt="" class="logosolo">
+      </section>
+      <section data-bespoke-state="mainColor" class="light fullscreen fullscreen--neverending"></section>
+      <section data-bespoke-state="mainColor" class="light fullscreen fullscreen--no"></section>
+      <section data-bespoke-state="mainColor7">
+        <h1>Negatives</h1>
+        <ul class="bullet">
+          <li>Buildstep</li>
+          <li>SourceMaps</li>
+          <li>"Know your CSS" &copy; Jonathan Snook</li>
+        </ul>
+      </section>
+      <section data-bespoke-state="mainColor" class="light fullscreen fullscreen--spiderman"></section>
+      <section data-bespoke-state="coffee" class="light">
+        <h1 class="bullet">Fragen?</h1>
+        <h1 class="bullet">Danke!</h1><img src="images/avatar.tobias.sailer.jpg" alt="" class="avatar">
       </section>
     </article>
     <script src="scripts/scripts.js"></script>
