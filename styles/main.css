@@ -255,7 +255,7 @@ pre span {
   text-shadow: none !important;
 }
 body {
-  background: #595959;
+  background: #001a2f;
   font-family: Roboto, helvetica, arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -355,7 +355,7 @@ article.mainColor1 {
   background: #42aaff;
 }
 article.mainColor2 {
-  background: #004176;
+  background: #8dccff;
 }
 .logo {
   background-position: center;
@@ -421,4 +421,28 @@ article.mainColor2 {
   -moz-background-size: 100%;
   background-size: 100%;
   background-image: url("../images/omg.gif");
+}
+.fullscreen--joker {
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  background-image: url("../images/joker.gif");
+}
+.fullscreen--familyguy {
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  background-image: url("../images/familyguy.gif");
+}
+.fullscreen--marcelo {
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  background-image: url("../images/marcelo.gif");
+}
+.fullscreen--clapp {
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  background-image: url("../images/clapp.gif");
 }

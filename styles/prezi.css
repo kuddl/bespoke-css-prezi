@@ -12,7 +12,7 @@ article.mainColor1 {
   background: primary2;
 }
 article.mainColor2 {
-  background: primary;
+  background: primary3;
 }
 /* Images */
 .logo {
@@ -59,4 +59,20 @@ article.mainColor2 {
 .fullscreen--omg {
   background-size: 100%;
   background-image: url("../images/omg.gif");
+}
+.fullscreen--joker {
+  background-size: 100%;
+  background-image: url("../images/joker.gif");
+}
+.fullscreen--familyguy {
+  background-size: 100%;
+  background-image: url("../images/familyguy.gif");
+}
+.fullscreen--marcelo {
+  background-size: 100%;
+  background-image: url("../images/marcelo.gif");
+}
+.fullscreen--clapp {
+  background-size: 100%;
+  background-image: url("../images/clapp.gif");
 }

@@ -35,18 +35,17 @@
         <h2 class="bullet">Sass vs Less vs Stylus</h2>
       </section>
       <section data-bespoke-state="mainColor1">
-        <h2>Sass</h2>
+        <h2>Sass  <small><a href="http://sass-lang.com/">http://sass-lang.com/</a></small></h2>
         <ul class="bullet">
           <li>Ruby</li>
           <li>*.sass und *.scss</li>
-          <li>Reichweite</li>
+          <li>Reichweite / Ecosystem</li>
           <li>Compass</li>
           <li>Caching</li>
-          <li>Ecosystem</li>
         </ul>
       </section>
       <section data-bespoke-state="mainColor1">
-        <h2>LESS</h2>
+        <h2>Less  <small><a href="http://lesscss.org/">http://lesscss.org/</a></small></h2>
         <ul class="bullet">
           <li>JavaScript </li>
           <li>Node.js und Browser nativ<small class="bullet">(DO NOT USE)</small></li>
@@ -55,9 +54,10 @@
         </ul>
       </section>
       <section data-bespoke-state="mainColor1">
-        <h2>Stylus</h2>
+        <h2>Stylus  <small><a href="http://learnboost.github.io/stylus/">http://learnboost.github.io/stylus/</a></small></h2>
         <ul class="bullet">
           <li>Node.js </li>
+          <li>Node.js Stammspieler</li>
           <li>Natives JavaScript</li>
           <li>Transparent Mixins + Syntax</li>
         </ul>
@@ -68,11 +68,9 @@
 h1 {
   color: #0982C1;
 }
-
 /* style.sass (ohne klammern)*/
 h1
   color: #0982c1
-  
 /* style.styl */
 h1 {
   color: #0982C1;
@@ -87,16 +85,15 @@ h1 {
         <h2>Syntax Stylus</h2>
         <pre><code class="language-css">/* style.styl */
 h1 {
-  color: #0982C1;
+  color: #C0FFEE;
 }
 /* ohne Klammern */
 h1
-  color: #0982C1;
+  color: #C0FFEE;
   
-/* Ohne  colons and semi-colons */
+/* ohne striche und punkte */
 h1
-  color #0982C1
-  
+  color #C0FFEE
   
   </code></pre>
       </section>
@@ -104,8 +101,173 @@ h1
         <h2 class="small">CSS Variablen</h2><small class="small">(coming soon)</small>
       </section>
       <section data-bespoke-state="mainColor" class="fullscreen fullscreen--oldman"></section>
+      <section data-bespoke-state="mainColor2" class="light">
+        <h2>Variablen</h2>
+        <pre><code class="language-javascript">@mainColor : #C0FFEE; //Sass
+$mainColor : #C0FFEE; // Less
+h1 { 
+  color: @mainColor;
+  color: $mainColor;
+} 
+/* Stylus */
+mainColor = #C0FFEE
+h1
+  color mainColor
+  </code></pre>
+      </section>
       <section>
-        <h2>Small Modules</h2>
+        <h2>Schachteln / Namespacing</h2>
+        <pre><code class="language-css">footer { 
+  margin: 10px;
+}
+footer nav { 
+  height: 25px;
+}
+footer nav a { 
+  text-decoration: none;
+}
+footer nav a:hover {
+  text-decoration: underline;
+}
+
+</code></pre>
+      </section>
+      <section>
+        <h2>Schachteln Sass, Less und Stylus</h2>
+        <pre><code class="language-css">section {
+  margin: 10px;
+  nav {
+    height: 25px;
+    a {
+      text-decoration: none;
+      &amp;:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+</code></pre>
+      </section>
+      <section>
+        <h2>Schachteln mit Stylus</h2>
+        <pre><code class="language-javascript">section
+  margin 10px
+  nav
+    height 25px
+    a
+      text-decoration none
+      &amp;:hover
+        text-decoration underline
+        </code></pre>
+      </section>
+      <section data-bespoke-state="emphatic" class="fullscreen fullscreen--joker"></section>
+      <section>
+        <h2>Mixins mit Sass</h2>
+        <pre><code class="language-javascript">@mixin msg($borderWidth: 2px, $color: #F00) {
+  border: $borderWidth solid $color;
+  color: $color;
+}
+
+.generic-error {
+  margin: 4px;
+  @include msg();
+}
+.login-error {
+  position: absolute;
+  top: 20px;
+  @include msg(5px,papayawhip);
+}
+</code></pre>
+      </section>
+      <section>
+        <h2>Mixins mit Less</h2>
+        <pre><code class="language-javascript">.msg(@borderWidth: 2px, @color: #F00) {
+  border: @borderWidth solid @color;
+  color: @color;
+}
+
+.generic-error {
+  margin: 4px;
+  .msg();
+}
+.login-error {
+  position: absolute;
+  top: 20px;
+  .msg(5px,papayawhip);
+}
+</code></pre>
+      </section>
+      <section>
+        <h2>Mixins mit Stylus</h2>
+        <pre><code class="language-javascript">msg(borderWidth= 2px, color= #F00)
+  border borderWidth solid color
+  color color
+  
+.generic-error 
+  margin 4px
+  msg()
+  
+.login-error
+  position absolute
+  top 20px
+  msg(5px,papayawhip)
+  </code></pre>
+      </section>
+      <section>
+        <h2>Vererbung / Extend </h2><br><small>Less & Sass & Stylus (hier mit Stylus)</small>
+        <pre><code class="language-javascript">red = #E33E1E
+yellow = #E2E21E
+
+.message
+  padding: 10px
+  font: 14px Helvetica
+  border: 1px solid #eee
+.warning
+  @extends .message
+  border-color: yellow
+  background: yellow + 70%
+.error
+  @extends .message
+  border-color: red
+  background: red + 70%
+.fatal
+  @extends .error
+  font-weight: bold
+  color: red
+  </code></pre>
+      </section>
+      <section>
+        <h2>Vererbung Ergebnis  </h2><br>
+        <pre><code class="language-css">.message,
+.warning,
+.error,
+.fatal {
+  padding: 10px;
+  font: 14px Helvetica;
+  border: 1px solid #eee;
+}
+.warning {
+  border-color: #e2e21e;
+  background: #f6f6bc;
+}
+.error,
+.fatal {
+  border-color: #e33e1e;
+  background: #f7c5bc;
+}
+.fatal {
+  font-weight: bold;
+  color: #e33e1e;
+}
+
+</code></pre>
+      </section>
+      <section>
+        <h2>CSS is a mess</h2><br><small>by Jonatha Snook http://snook.ca/pages/speaking</small><br><img src="./images/scrolling.gif" style="max-width:100%;" class="bullet">
+      </section>
+      <section data-bespoke-state="emphatic" class="fullscreen fullscreen--familyguy"></section>
+      <section>
+        <h2>pure CSS @import</h2><br><small>(HAZ BAD PERFORMANCE)</small>
         <pre><code class="language-css">@import "header.css";
 @import "bildtext.css";
 @import "globalnavi.css";
@@ -124,63 +286,91 @@ h1
 @import "tabbar.css";
 @import "accordeon.css";
 @import "slider.css";
-@import "recall.css";</code></pre>
-      </section>
-      <section data-bespoke-state="emphatic" class="logo logo--segway">
-        <h2>Keyboard Interaction</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespokqe-keys">bespoke-keys</a></h3>
-      </section>
-      <section>
-        <h2>Touch Interaction</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a></h3>
-      </section>
-      <section>
-        <h2>Responsive Slides</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a></h3>
-      </section>
-      <section>
-        <h2>Bullet List</h2>
-        <h3 class="bullet">Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a></h3>
-        <ul>
-          <li>Bullet 1</li>
-          <li>Bullet 2</li>
-          <li>Bullet 3</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Syntax Highlighting</h2>
-        <h3>Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a></h3>
-        <hr>
-        <pre><code class="language-javascript">bespoke.from('article', {
-  keys: true,
-  touch: true,
-  hash: true,
-  state: true,
-  bullets: 'li, .bullet'
-});
+@import "recall.css";
 </code></pre>
       </section>
-      <section data-bespoke-hash="named-route">
-        <h2>Named Route</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a></h3>
-        <p>Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.</p>
+      <section data-bespoke-state="emphatic" class="fullscreen fullscreen--marcelo"></section>
+      <section>
+        <h2>@import Preprozessor </h2><br><small>(YOU CAN HAZ THIS)</small>
+        <pre><code class="language-css">@import "mixins.less";
+@import "colors.less";
+@import "grid.less";
+@import "file.{type}";
+
+</code></pre>
       </section>
-      <section data-bespoke-state="emphatic">
-        <h2>Emphatic Slide!</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-state">bespoke-state</a></h3>
+      <section data-bespoke-state="emphatic" class="fullscreen fullscreen--clapp"></section>
+      <section>
+        <h2>Farben</h2>
+        <pre><code class="language-css">lighten($color, 10%);
+darken($color, 10%);
+
+saturate($color, 10%);
+desaturate($color, 10%);
+
+grayscale($color);
+complement($color);
+invert($color);
+
+mix($color1, $color2, 50%);
+
+</code></pre>
       </section>
       <section>
-        <h2 class="bullet">Just the beginning...</h2>
-        <hr>
-        <ul>
-          <li>Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em></li>
-          <li>Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em></li>
-          <li>Edit JavaScript in <em>'src/scripts/main.js'</em></li>
-        </ul>
-        <hr>
-        <ul>
-          <li><strong>Enjoy! :)</strong><a href="http://twitter.com/markdalgleish"> -@markdalgleish</a></li>
-        </ul>
+        <h2>Berechnen</h2>
+        <pre><code class="language-css">body {
+  margin: (14px/2);
+  top: 50px + 100px;
+  right: 100px - 50px;
+  left: 10 * 10;
+}
+</code></pre>
+      </section>
+      <section>
+        <h2>Browser Prefixing</h2><small>(Less Beispiel)</small>
+        <pre><code class="language-css">.border-radius(@values) {
+  -webkit-border-radius: @values;
+     -moz-border-radius: @values;
+          border-radius: @values;
+}
+
+div {
+  .border-radius(10px);
+}
+
+</code></pre>
+      </section>
+      <section>
+        <h3>Easy semantic Grid <small><a href="http://semantic.gs/">http://semantic.gs/</a></small></h3>
+        <pre><code class="language-markup">&lt;header&gt;...&lt;/header&gt;
+&lt;article&gt;...&lt;/article&gt;
+&lt;aside&gt;...&lt;/aside&gt;</code></pre>
+        <pre><code class="language-css">@column-width: 60;
+@gutter-width: 20;
+@columns: 12;
+
+header { .column(12); }
+article { .column(9); }
+aside { .column(3); }
+
+@media (max-device-width: 960px) {
+   article { .column(12); }
+   aside { .column(12); }
+}
+
+</code></pre>
+      </section>
+      <section>
+        <h2>Base64 data-uri</h2>
+        <pre><code class="language-css">/* macht aus */
+data-uri('../data/image.jpg');
+/* ein base64 */
+url('data:image/jpeg;base64,bm90IGFjdHVhbGx5IGEganBlZyBmaWxlCg==');
+</code></pre>
+      </section>
+      <section data-bespoke-state="emphatic" class="logo logo--segway"></section>
+      <section>
+        <h2>Mixin Bibliotheken</h2>
       </section>
     </article>
     <script src="scripts/scripts.js"></script>
