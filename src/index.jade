@@ -389,7 +389,49 @@ html
               left: 10 * 10;
             }
 
-      
+      section.fullscreen.fullscreen--monk(data-bespoke-state='mainColor2')
+      section.light(data-bespoke-state='mainColor2')
+        h2 Kontrollstrukturen
+        pre
+          code.language-css.
+            $type: monster;
+            p {
+              @if $type == ocean {
+                color: blue;
+              } @else if $type == matador {
+                color: red;
+              } 
+              @if 5 < 3      { border: 2px dotted; }
+              @for $i from 1 through 3 {
+                .item-#{$i} { width: 2em * $i; }
+              }
+            }
+
+      section.light(data-bespoke-state='mainColor2')
+        h2 Hashes
+        pre
+          code.language-css.
+            /* set */
+            foo = {
+              bar: baz,
+              'baz': raz,
+              '0': raz
+            }
+            /* get */
+            foo.bar
+            foo[bar]
+            /* komplex */
+
+            foo = 
+              bar:
+                baz:
+                  raz: 10px
+
+            qux = "raz"
+            foo["bar"].baz[qux]
+            // => 10px
+
+
       section.fullscreen.fullscreen--browser(data-bespoke-state='mainColor10')
       section(data-bespoke-state='mainColor10')
         h2 Browser Prefixing
@@ -432,6 +474,21 @@ html
                aside { .column(12); }
             }
 
+        
+      section(data-bespoke-state='mainColor11')
+        h3 Nested Grid 
+          small 
+            a(href="http://semantic.gs/") http://semantic.gs/
+        pre
+          code.language-markup.
+            article {
+               .column(9);
+               ul {
+                .row(9);
+                  li {.column(3,9);}
+               }
+            }
+            aside {.column(3);}
 
       section.light(data-bespoke-state='mainColor12')
         h2 #kittenfistbump
@@ -444,6 +501,28 @@ html
             data-uri('../data/image.jpg');
             /* ein base64 */
             url('data:image/jpeg;base64,bm90IGFjdHVhbGx5IGEganBlZyBmaWxlCg==');
+
+
+      section.fullscreen.fullscreen--keyframes(data-bespoke-state='mainColor10')
+      section(data-bespoke-state='mainColor10')
+        h2 Keyframes
+        small (Stylus Beispiel)
+        pre
+          code.language-css.
+            $keyframe-name = pulse
+            @keyframes {$keyframe-name}
+              for i in 0..10
+                {10% * i}
+                  opacity (i/10)
+            /* outout ohne Prefixing */
+            @keyframes pulse {
+              0% { opacity: 0;}
+              20% {opacity: 0.2;}
+              40% {opacity: 0.4;}
+              60% {opacity: 0.6;}
+              80% {opacity: 0.8;}
+              100% {opacity: 1;}
+            }
 
       
       section.logo.logo--segway(data-bespoke-state='mainColor13')
@@ -462,6 +541,7 @@ html
       section(data-bespoke-state="mainColor7")
         h1 Negatives
         ul.bullet
+          li Lernkurve
           li Buildstep
           li SourceMaps
           li "Know your CSS" &copy; Jonathan Snook
