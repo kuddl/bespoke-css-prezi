@@ -53,6 +53,18 @@ article.mainColor12 {
 article.mainColor13 {
   background: secondarycolor4;
 }
+article.mainColor14 {
+  background: secondarycolor5;
+}
+article.mainColor15 {
+  background: secondarycolor6;
+}
+article.mainColor16 {
+  background: secondarycolor7;
+}
+article.mainColor17 {
+  background: secondarycolor8;
+}
 article.coffee {
   background: #c0ffee;
 }
@@ -153,4 +165,12 @@ article.coffee {
 .fullscreen--spiderman {
   background-size: 100%;
   background-image: url("../images/spiderman.jpg");
+}
+.fullscreen--monk {
+  background-size: 100%;
+  background-image: url("../images/monk.gif");
+}
+.fullscreen--keyframes {
+  background-size: 100%;
+  background-image: url("../images/keyframes.jpg");
 }

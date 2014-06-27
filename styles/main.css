@@ -403,6 +403,18 @@ article.mainColor12 {
 article.mainColor13 {
   background: #ffd4b1;
 }
+article.mainColor14 {
+  background: #6a3000;
+}
+article.mainColor15 {
+  background: #5e2a00;
+}
+article.mainColor16 {
+  background: #472000;
+}
+article.mainColor17 {
+  background: #3b1a00;
+}
 article.coffee {
   background: #c0ffee;
 }
@@ -548,4 +560,16 @@ article.coffee {
   -moz-background-size: 100%;
   background-size: 100%;
   background-image: url("../images/spiderman.jpg");
+}
+.fullscreen--monk {
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  background-image: url("../images/monk.gif");
+}
+.fullscreen--keyframes {
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  background-image: url("../images/keyframes.jpg");
 }

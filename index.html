@@ -37,7 +37,7 @@
       <section data-bespoke-state="mainColor1">
         <h2>Sass  <small><a href="http://sass-lang.com/">http://sass-lang.com/</a></small></h2>
         <ul class="bullet">
-          <li>Ruby</li>
+          <li>Ruby (Libsass in C++)</li>
           <li>*.sass und *.scss</li>
           <li>Reichweite / Ecosystem</li>
           <li>Compass</li>
@@ -325,6 +325,46 @@ mix($color1, $color2, 50%);
   right: 100px - 50px;
   left: 10 * 10;
 }
+</code></pre>
+      </section>
+      <section data-bespoke-state="mainColor2" class="fullscreen fullscreen--monk"></section>
+      <section data-bespoke-state="mainColor2" class="light">
+        <h2>Kontrollstrukturen</h2>
+        <pre><code class="language-css">$type: monster;
+p {
+  @if $type == ocean {
+    color: blue;
+  } @else if $type == matador {
+    color: red;
+  } 
+  @if 5 < 3      { border: 2px dotted; }
+  @for $i from 1 through 3 {
+    .item- { width: 2em * $i; }
+  }
+}
+</code></pre>
+      </section>
+      <section data-bespoke-state="mainColor2" class="light">
+        <h2>Hashes</h2>
+        <pre><code class="language-css">/* set */
+foo = {
+  bar: baz,
+  'baz': raz,
+  '0': raz
+}
+/* get */
+foo.bar
+foo[bar]
+/* komplex */
+
+foo = 
+  bar:
+    baz:
+      raz: 10px
+      
+qux = "raz"
+foo["bar"].baz[qux]
+// => 10px
 
 </code></pre>
       </section>
@@ -364,6 +404,18 @@ aside { .column(3); }
 
 </code></pre>
       </section>
+      <section data-bespoke-state="mainColor11">
+        <h3>Nested Grid <small><a href="http://semantic.gs/">http://semantic.gs/</a></small></h3>
+        <pre><code class="language-markup">article {
+   .column(9);
+   ul {
+    .row(9);
+      li {.column(3,9);}
+   }
+}
+aside {.column(3);}
+</code></pre>
+      </section>
       <section data-bespoke-state="mainColor12" class="light">
         <h2>#kittenfistbump</h2><img src="images/kittenfistbump.jpg" alt="">
       </section>
@@ -376,6 +428,26 @@ url('data:image/jpeg;base64,bm90IGFjdHVhbGx5IGEganBlZyBmaWxlCg==');
 
 </code></pre>
       </section>
+      <section data-bespoke-state="mainColor10" class="fullscreen fullscreen--keyframes"></section>
+      <section data-bespoke-state="mainColor10">
+        <h2>Keyframes</h2><small>(Stylus Beispiel)</small>
+        <pre><code class="language-css">$keyframe-name = pulse
+@keyframes {$keyframe-name}
+  for i in 0..10
+    {10% * i}
+      opacity (i/10)
+/* outout ohne Prefixing */
+@keyframes pulse {
+  0% { opacity: 0;}
+  20% {opacity: 0.2;}
+  40% {opacity: 0.4;}
+  60% {opacity: 0.6;}
+  80% {opacity: 0.8;}
+  100% {opacity: 1;}
+}
+
+</code></pre>
+      </section>
       <section data-bespoke-state="mainColor13" class="logo logo--segway"></section>
       <section data-bespoke-state="mainColor13" class="light">
         <h2>Mixin Bibliotheken</h2><img src="images/sass_compass.png" alt="" class="logosolo"><img src="images/less_hat.jpg" alt="" class="logosolo"><img src="images/nib.png" alt="" class="logosolo">
@@ -385,7 +457,8 @@ url('data:image/jpeg;base64,bm90IGFjdHVhbGx5IGEganBlZyBmaWxlCg==');
       <section data-bespoke-state="mainColor7">
         <h1>Negatives</h1>
         <ul class="bullet">
-          <li>Buildstep</li>
+          <li>Lernkurve</li>
+          <li>Buildstep / Software / Console</li>
           <li>SourceMaps</li>
           <li>"Know your CSS" &copy; Jonathan Snook</li>
         </ul>
