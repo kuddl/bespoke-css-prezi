@@ -1,9 +1,12 @@
 # CSS Prezi
 > A [Bespoke.js](http://markdalgleish.com/projects/bespoke.js) presentation, built with [generator-bespoke](https://github.com/markdalgleish/generator-bespoke)
 
-## View slides locally
+## View slides locally, really
 
-First, ensure you have the following installed:
+
+lorem ispum whatr?
+
+First, ensure you have the following installed.
 
 1. [Node.js](http://nodejs.org)
 2. [Bower](http://bower.io): `$ npm install -g bower`
