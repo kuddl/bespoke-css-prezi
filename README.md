@@ -1,4 +1,9 @@
-# CSS Prezi
+# Präsentation über CSS Preprozessoren.
+Diese Präsentation wurde auf der SDC 2014 gehalten.
+Viel Spaß beim blättern.
+
+
+## CSS Prezi
 > A [Bespoke.js](http://markdalgleish.com/projects/bespoke.js) presentation, built with [generator-bespoke](https://github.com/markdalgleish/generator-bespoke)
 
 ## View slides locally
